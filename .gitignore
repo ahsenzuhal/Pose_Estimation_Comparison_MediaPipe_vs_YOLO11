@@ -1,0 +1,16 @@
+# Models and weights (auto-downloaded or local-only)
+*.task
+*.pt
+
+# Python caching
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Local media outputs
+*.mp4
+*.avi
+*.mkv
