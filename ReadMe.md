@@ -1,4 +1,4 @@
-# 🦴 Pose Estimation Comparison: MediaPipe vs YOLO11
+#  Pose Estimation Comparison: MediaPipe vs YOLO11
 
 <p align="center">
   <img src="docs/preview.gif" alt="MediaPipe vs YOLO demo" width="800"/>
@@ -20,7 +20,7 @@ Real-time FPS tracking is rendered on each panel, with optional support to outpu
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Resource-Optimized Single Feed** — Reads from a single camera/video stream to process both models on identical frames, avoiding resource conflicts and allowing seamless webcam sharing on Windows.
 - **Real-Time FPS Tracking** — Independent moving-average FPS counters for both MediaPipe and YOLO11 panels.
@@ -30,7 +30,7 @@ Real-time FPS tracking is rendered on each panel, with optional support to outpu
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ```bash
 git clone https://github.com/yourusername/pose-comparison.git
@@ -42,7 +42,7 @@ pip install -r Requirements.TXT
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### 📷 Live Webcam (Default)
 
@@ -50,19 +50,19 @@ pip install -r Requirements.TXT
 python Compare_pose.py
 ```
 
-### 🎞️ Video File Source
+###  Video File Source
 
 ```bash
 python Compare_pose.py --source video.mp4
 ```
 
-### 💾 Save the Output Comparison
+###  Save the Output Comparison
 
 ```bash
 python Compare_pose.py --source video.mp4 --save output.mp4
 ```
 
-### ⚙️ Command-Line Arguments
+###  Command-Line Arguments
 
 ```bash
 python Compare_pose.py \
@@ -76,7 +76,7 @@ python Compare_pose.py \
 
 ---
 
-## 🧠 Model Configuration Options
+##  Model Configuration Options
 
 ### MediaPipe — `--mp-complexity`
 
@@ -100,8 +100,7 @@ python Compare_pose.py \
 
 ---
 
-## 📊 Output Layout
-
+##  Output Layout
 ```
 ┌──────────────────────────────┬──────────────────────────────┐
 │  MediaPipe  │  FPS:  42.3    │  YOLO11     │  FPS:  28.7   │
@@ -116,7 +115,7 @@ To exit the visualization, simply press **`q`** or **`ESC`** while the OpenCV wi
 
 ---
 
-## 📝 Observations & Notes
+##  Observations & Notes
 
 - **Camera Sharing:** Unlike traditional dual-feed approaches, this script leverages a single shared `VideoCapture` instance. This prevents native lockups and permission issues when accessing webcams on Windows operating systems.
 - **Model Behaviors:**
@@ -125,7 +124,7 @@ To exit the visualization, simply press **`q`** or **`ESC`** while the OpenCV wi
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 ```text
 opencv-python>=4.8.0
@@ -136,6 +135,6 @@ numpy>=1.24.0
 
 ---
 
-## 📄 License
+##  License
 
 MIT © 2024
